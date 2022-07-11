@@ -41,15 +41,7 @@ async function getUser(req, res){
     return res.status(200).send({ user: user })
 }
 
-// async function deleteUser(req, res){
-    
-//     const user_deleted = req.params.id;
 
-//     const user = await User.findByIdAndDelete(user_deleted);
-//     console.log(user);
-    
-//     res.send({ userDeleted: user });
-// }
 
 //UPADATE USER
 async function updateUser(req, res) {
@@ -107,7 +99,6 @@ module.exports = {
     addUser,
     getUsers,
     getUser,
-    /*deleteUser,*/
     login,
     updateUser
 }
